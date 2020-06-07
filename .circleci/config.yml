@@ -13,8 +13,7 @@ jobs:
     
     steps:
       - checkout
-          post:
-            - pip install -U pip setuptools virtualenv
+          post: pip install -U pip setuptools virtualenv
       # Download and cache dependencies
       - restore_cache:
           keys:
