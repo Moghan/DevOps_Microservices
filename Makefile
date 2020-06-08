@@ -13,7 +13,7 @@ setup:
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
-		pip install setuptools wheel &&\
+		pip install setuptools wheel pylint &&\
 		pip install -r requirements.txt
 		
 install-hadolint:
