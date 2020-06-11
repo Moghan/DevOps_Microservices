@@ -13,4 +13,4 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker run --name price-service -p 8000:8000 $dockerpath
+docker run --name price-service -p 80:80 $dockerpath

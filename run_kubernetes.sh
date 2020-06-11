@@ -11,7 +11,7 @@ dockerpath="ybsnek/devops-pricing-service"
 kubectl run devops\
     --generator=run-pod/v1\
     --image=$dockerpath\
-    --port=8000 --labels app=my-devops
+    --port=80 --labels app=my-devops
 
 # Step 3:
 # List kubernetes pods
@@ -19,4 +19,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward devops 8000:8000
+kubectl port-forward devops 80:80
