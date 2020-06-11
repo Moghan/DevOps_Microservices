@@ -1,1 +1,15 @@
-<paste log output from Kubernetes-mediated prediction, here>
+$ kubectl port-forward devops 8000:8000 &
+[1] 5740
+
+$ Forwarding from 127.0.0.1:8000 -> 8000
+Forwarding from [::1]:8000 -> 8000
+./make_prediction.sh
+Port: 8000
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Handling connection for 8000
+100   260  100    48  100   212   1548   6838 --:--:-- --:--:-- --:--:--  8387{
+  "prediction": [
+    20.35373177134412
+  ]
+}
